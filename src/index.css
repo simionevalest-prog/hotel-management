@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Georgia", serif;
+  
+  --color-bg: #F9F7F2;
+  --color-ink: #1A1A1A;
+  --color-accent: #8C764D;
+  --color-line: rgba(26, 26, 26, 0.15);
+}
+
+body {
+  @apply bg-bg text-ink font-sans antialiased;
+}
+
+h1, h2, h3, .font-serif {
+  @apply font-serif;
+}
+
+.editorial-label {
+  @apply text-[10px] uppercase tracking-[0.15em] text-ink/60 font-medium;
+}
+
+.editorial-border {
+  @apply border-line;
+}
+
+.btn-editorial-outline {
+  @apply border border-ink px-6 py-2 text-[13px] uppercase tracking-widest hover:bg-ink hover:text-bg transition-all duration-300;
+}
+
+.btn-editorial-solid {
+  @apply bg-ink text-bg px-10 py-4 text-[14px] uppercase tracking-[0.2em] hover:bg-accent transition-all duration-300;
+}
